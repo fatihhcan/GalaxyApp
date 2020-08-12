@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uzayRehberApp/components/color.dart';
+import 'package:uzayRehberApp/components/style/color/color.dart';
 import 'package:uzayRehberApp/routes/router.dart';
 
 class SplashView extends StatefulWidget {
@@ -16,7 +16,7 @@ class _SplashViewState extends State<SplashView> {
     super.initState();
     Future.delayed(
         Duration(
-          seconds: 10,
+          seconds: 3,
         ), () {
       Navigator.pushNamed(context, Routes.home);
     });

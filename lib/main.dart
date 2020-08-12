@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Galaxy App',
-      initialRoute: Routes.splash,
+      initialRoute: Routes.home,
       onGenerateRoute: generateRoute,
     );
   }
