@@ -11,3 +11,6 @@ Text buttonGezegenlerText = Text("Gezegenler",
 Text buttonCikisText = Text("Çıkış",
     style: TextStyle(
         fontWeight: FontWeight.bold, color: sixthColor, fontSize: 35));
+Text gezegenlerText = Text("Gezegenler",
+    style: TextStyle(
+        fontWeight: FontWeight.bold, color: sixthColor, fontSize: 35));
