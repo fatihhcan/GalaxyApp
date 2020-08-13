@@ -15,14 +15,14 @@ class Routes {
 
 Widget routes(String name, Map<String, dynamic> arguments) {
   switch (name) {
-    /* case Routes.splash:
+    case Routes.splash:
       return SplashView();
-     case Routes.home:
-      return HomeView();*/
+    case Routes.home:
+      return HomeView();
     case Routes.secondView:
       return PlanetsView();
     default:
-      return PlanetsView(); //SplashView
+      return SplashView();
   }
 }
 
