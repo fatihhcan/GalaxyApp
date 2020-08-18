@@ -51,7 +51,9 @@ class _HomeViewState extends State<HomeView> {
             height: pageHeight * 0.09,
             child: RaisedButton(
               color: fifthColor,
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/planets');
+              },
               child: buttonGezegenlerText,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40),

@@ -42,6 +42,8 @@ class _PlanetsViewState extends State<PlanetsView> {
           Icons.arrow_back,
           color: sixthColor,
         ),
-        onPressed: () {});
+        onPressed: () {
+          Navigator.pushNamed(context, '/home');
+        });
   }
 }

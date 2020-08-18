@@ -6,10 +6,6 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Galaxy App',
-      initialRoute: Routes.secondView,
-      onGenerateRoute: generateRoute,
-    );
+    return MaterialApp(title: 'Material App', home: Router());
   }
 }

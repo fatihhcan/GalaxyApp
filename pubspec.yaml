@@ -48,7 +48,20 @@ flutter:
   assets:
     - asset/splash.gif
     - asset/gezegenler.png
-    - asset/mars.png
+    - asset/planets/Mars.png
+    - asset/planets/Earth.png
+    - asset/planets/Jupiter.png
+    - asset/planets/Mercury.png
+    - asset/planets/Moon.png
+    - asset/planets/Neptune.png
+    - asset/planets/Pluto.png
+    - asset/planets/Saturn.png
+    - asset/planets/Uranus.png
+    - asset/planets/Venus.png
+
+
+
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

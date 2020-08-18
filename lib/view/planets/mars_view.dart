@@ -25,7 +25,7 @@ class _MarsViewState extends State<MarsView> {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20)),
                 child: Image.asset(
-                  "asset/mars.png",
+                  "asset/planets/Mercury.png",
                   //   fit: BoxFit.fill,
                 ),
               ),
