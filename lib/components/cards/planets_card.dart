@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uzayRehberApp/view/planets/mars_view.dart';
+import 'package:uzayRehberApp/view/planets/venus_view.dart';
 
 class PlanetsCard extends StatefulWidget {
   PlanetsCard({Key key}) : super(key: key);
@@ -21,6 +22,19 @@ class _PlanetsCardState extends State<PlanetsCard> {
     "asset/planets/Uranus.png",
     "asset/planets/Venus.png",
   ];
+  int _currentPageIndex = 0;
+  Widget get _page {
+    switch (_currentPageIndex) {
+      case 0:
+        return MarsView();
+        break;
+      case 1:
+        return VenusView();
+        break;
+      default:
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return GridView.count(
@@ -28,14 +42,14 @@ class _PlanetsCardState extends State<PlanetsCard> {
         children: List.generate(10, (index) {
           return GestureDetector(
             onTap: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => MarsView()));
+              setState(() {
+                _currentPageIndex = index;
+              });
             },
             child: Card(
               //semanticContainer: true,
               clipBehavior: Clip.antiAliasWithSaveLayer,
               elevation: 5,
-
               margin: EdgeInsets.all(20),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)),
