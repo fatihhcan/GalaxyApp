@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:uzayRehberApp/components/style/color/color.dart';
 
 class MarsView extends StatefulWidget {
-  MarsView({Key key}) : super(key: key);
+  MarsView({
+    Key key,
+    int indexOne,
+  }) : super(key: key);
 
   @override
   _MarsViewState createState() => _MarsViewState();

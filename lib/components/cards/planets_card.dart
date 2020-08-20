@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:uzayRehberApp/routes/second_router.dart';
 import 'package:uzayRehberApp/view/planets/mars_view.dart';
 import 'package:uzayRehberApp/view/planets/venus_view.dart';
 
 class PlanetsCard extends StatefulWidget {
-  PlanetsCard({Key key}) : super(key: key);
+  PlanetsCard({
+    Key key,
+  }) : super(key: key);
 
   @override
   _PlanetsCardState createState() => _PlanetsCardState();
@@ -22,9 +25,9 @@ class _PlanetsCardState extends State<PlanetsCard> {
     "asset/planets/Uranus.png",
     "asset/planets/Venus.png",
   ];
-  int _currentPageIndex = 0;
-  Widget get _page {
-    switch (_currentPageIndex) {
+  /* var currentPageIndex = [0];
+  Widget get page {
+    switch (currentPageIndex.length) {
       case 0:
         return MarsView();
         break;
@@ -32,8 +35,13 @@ class _PlanetsCardState extends State<PlanetsCard> {
         return VenusView();
         break;
       default:
+        return page;
     }
   }
+List<Widget> router = <Widget>[
+  MarsView(),
+  VenusView(),
+];*/
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +50,11 @@ class _PlanetsCardState extends State<PlanetsCard> {
         children: List.generate(10, (index) {
           return GestureDetector(
             onTap: () {
-              setState(() {
-                _currentPageIndex = index;
-              });
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => SecondRouter(index: index)),
+              );
             },
             child: Card(
               //semanticContainer: true,
