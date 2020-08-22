@@ -4,7 +4,6 @@ import 'package:uzayRehberApp/components/style/color/color.dart';
 class MarsView extends StatefulWidget {
   MarsView({
     Key key,
-    int indexOne,
   }) : super(key: key);
 
   @override

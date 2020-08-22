@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:uzayRehberApp/routes/second_router.dart';
 import 'package:uzayRehberApp/view/planets/mars_view.dart';
 import 'package:uzayRehberApp/view/planets/venus_view.dart';
 
@@ -25,23 +24,11 @@ class _PlanetsCardState extends State<PlanetsCard> {
     "asset/planets/Uranus.png",
     "asset/planets/Venus.png",
   ];
-  /* var currentPageIndex = [0];
-  Widget get page {
-    switch (currentPageIndex.length) {
-      case 0:
-        return MarsView();
-        break;
-      case 1:
-        return VenusView();
-        break;
-      default:
-        return page;
-    }
-  }
-List<Widget> router = <Widget>[
-  MarsView(),
-  VenusView(),
-];*/
+
+  List<Widget> pages = <Widget>[
+    MarsView(),
+    VenusView(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -52,8 +39,7 @@ List<Widget> router = <Widget>[
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                    builder: (context) => SecondRouter(index: index)),
+                MaterialPageRoute(builder: (context) => pages[index]),
               );
             },
             child: Card(
