@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:uzayRehberApp/components/style/color/color.dart';
 
-class VenusView extends StatefulWidget {
-  VenusView({
+class MercuryView extends StatefulWidget {
+  MercuryView({
     Key key,
   }) : super(key: key);
 
   @override
-  _VenusViewState createState() => _VenusViewState();
+  _MercuryViewState createState() => _MercuryViewState();
 }
 
-class _VenusViewState extends State<VenusView> {
+class _MercuryViewState extends State<MercuryView> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -28,7 +28,7 @@ class _VenusViewState extends State<VenusView> {
                         bottomRight: Radius.circular(60),
                       ),
                       child: Image.asset(
-                        "asset/planets/Venus.png",
+                        "asset/planets/Mercury.png",
                       ),
                     ),
                   ),

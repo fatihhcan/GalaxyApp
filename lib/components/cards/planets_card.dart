@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:uzayRehberApp/view/planets/earth_view.dart';
+import 'package:uzayRehberApp/view/planets/jupiter_view.dart';
 import 'package:uzayRehberApp/view/planets/mars_view.dart';
+import 'package:uzayRehberApp/view/planets/mercury_view.dart';
+import 'package:uzayRehberApp/view/planets/moon_view.dart';
+import 'package:uzayRehberApp/view/planets/neptune_view.dart';
+import 'package:uzayRehberApp/view/planets/pluto_view.dart';
+import 'package:uzayRehberApp/view/planets/saturn_view.dart';
+import 'package:uzayRehberApp/view/planets/uranus_view.dart';
 import 'package:uzayRehberApp/view/planets/venus_view.dart';
 
 class PlanetsCard extends StatefulWidget {
@@ -27,6 +35,14 @@ class _PlanetsCardState extends State<PlanetsCard> {
 
   List<Widget> pages = <Widget>[
     MarsView(),
+    EarthView(),
+    JupiterView(),
+    MercuryView(),
+    MoonView(),
+    NeptuneView(),
+    PlutoView(),
+    SaturnView(),
+    UranusView(),
     VenusView(),
   ];
 

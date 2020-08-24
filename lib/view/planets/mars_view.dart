@@ -19,17 +19,30 @@ class _MarsViewState extends State<MarsView> {
         body: Container(
           child: Column(
             children: [
-              Card(
-                //semanticContainer: true,
-                clipBehavior: Clip.antiAliasWithSaveLayer,
-                elevation: 5,
-
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)),
-                child: Image.asset(
-                  "asset/planets/Mars.png",
-                  //   fit: BoxFit.fill,
-                ),
+              Stack(
+                children: [
+                  Container(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(60),
+                        bottomRight: Radius.circular(60),
+                      ),
+                      child: Image.asset(
+                        "asset/planets/Mars.png",
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: FloatingActionButton(
+                      onPressed: () {},
+                      child: Icon(Icons.keyboard_arrow_left),
+                      backgroundColor: fifthColor,
+                      focusColor: thirdColor,
+                      splashColor: thirdColor,
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
