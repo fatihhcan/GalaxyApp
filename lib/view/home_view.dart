@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:uzayRehberApp/components/cards/home_card.dart';
 import 'package:uzayRehberApp/components/style/color/color.dart';
 import 'package:uzayRehberApp/components/style/text/text.dart';
@@ -68,7 +69,9 @@ class _HomeViewState extends State<HomeView> {
             height: pageHeight * 0.09,
             child: RaisedButton(
               color: fourthColor,
-              onPressed: () {},
+              onPressed: () {
+                SystemNavigator.pop();
+              },
               child: buttonCikisText,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(40),

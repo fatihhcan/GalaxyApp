@@ -35,7 +35,9 @@ class _SaturnViewState extends State<SaturnView> {
                   Padding(
                     padding: const EdgeInsets.all(10),
                     child: FloatingActionButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/planets');
+                      },
                       child: Icon(Icons.keyboard_arrow_left),
                       backgroundColor: fifthColor,
                       focusColor: thirdColor,
