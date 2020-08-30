@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uzayRehberApp/components/cards/planets_card.dart';
 import 'package:uzayRehberApp/components/style/color/color.dart';
-import 'package:uzayRehberApp/components/style/text/text.dart';
 
 class PlanetsView extends StatefulWidget {
   PlanetsView({Key key}) : super(key: key);
