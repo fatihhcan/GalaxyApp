@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:uzayRehberApp/components/style/color/color.dart';
 
@@ -11,6 +13,7 @@ class EarthView extends StatefulWidget {
 }
 
 class _EarthViewState extends State<EarthView> {
+  final String url = "localhost:3000/posts";
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -46,6 +49,8 @@ class _EarthViewState extends State<EarthView> {
                   ),
                 ],
               ),
+              Container(child: Card() //url,
+                  ),
             ],
           ),
         ),
