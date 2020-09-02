@@ -46,6 +46,8 @@ class _VenusViewState extends State<VenusView> {
                   ),
                 ],
               ),
+              Container(child: Card() //url,
+                  ),
             ],
           ),
         ),

@@ -26,7 +26,6 @@ class _HomeCardState extends State<HomeCard> {
             borderRadius: BorderRadius.circular(15),
           ),
           elevation: 5,
-          //margin: EdgeInsets.all(10),
         ),
       ),
     );
