@@ -1,7 +1,7 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:uzayRehberApp/components/style/color/color.dart';
+import 'package:uzayRehberApp/model/planets.dart';
+import 'package:uzayRehberApp/services/service.dart';
 
 class EarthView extends StatefulWidget {
   EarthView({
@@ -49,8 +49,13 @@ class _EarthViewState extends State<EarthView> {
                   ),
                 ],
               ),
-              Container(child: Card() //url,
-                  ),
+              Container(
+                child: FutureBuilder<Question>(
+                    //      future: getQuestion(),
+                    builder: (context, snapshot) {
+                  return Text('${snapshot.data.description}');
+                }),
+              )
             ],
           ),
         ),

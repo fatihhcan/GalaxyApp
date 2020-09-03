@@ -46,6 +46,8 @@ class _JupiterViewState extends State<JupiterView> {
                   ),
                 ],
               ),
+              Container(child: Card() //url,
+                  ),
             ],
           ),
         ),

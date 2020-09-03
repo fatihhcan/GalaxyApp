@@ -46,6 +46,8 @@ class _NeptuneViewState extends State<NeptuneView> {
                   ),
                 ],
               ),
+              Container(child: Card() //url,
+                  ),
             ],
           ),
         ),

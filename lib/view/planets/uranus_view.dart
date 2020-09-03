@@ -46,6 +46,8 @@ class _UranusViewState extends State<UranusView> {
                   ),
                 ],
               ),
+              Container(child: Card() //url,
+                  ),
             ],
           ),
         ),

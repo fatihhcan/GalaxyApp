@@ -46,6 +46,8 @@ class _MercuryViewState extends State<MercuryView> {
                   ),
                 ],
               ),
+              Container(child: Card() //url,
+                  ),
             ],
           ),
         ),

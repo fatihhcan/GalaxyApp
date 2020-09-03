@@ -46,6 +46,8 @@ class _PlutoViewState extends State<PlutoView> {
                   ),
                 ],
               ),
+              Container(child: Card() //url,
+                  ),
             ],
           ),
         ),

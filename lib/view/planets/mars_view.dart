@@ -46,6 +46,8 @@ class _MarsViewState extends State<MarsView> {
                   ),
                 ],
               ),
+              Container(child: Card() //url,
+                  ),
             ],
           ),
         ),

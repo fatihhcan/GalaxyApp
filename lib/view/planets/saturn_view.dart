@@ -46,6 +46,8 @@ class _SaturnViewState extends State<SaturnView> {
                   ),
                 ],
               ),
+              Container(child: Card() //url,
+                  ),
             ],
           ),
         ),
