@@ -46,8 +46,13 @@ class _VenusViewState extends State<VenusView> {
                   ),
                 ],
               ),
-              Container(child: Card() //url,
-                  ),
+              Container(
+                child: FutureBuilder<Question>(
+                    future: getPost(),
+                    builder: (context, snapshot) {
+                      return Text('${snapshot.data.description}');
+                    }),
+              )
             ],
           ),
         ),
