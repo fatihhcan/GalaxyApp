@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uzayRehberApp/components/style/color/color.dart';
+import 'package:uzayRehberApp/model/planets.dart';
+import 'package:uzayRehberApp/services/service.dart';
 
 class VenusView extends StatefulWidget {
   VenusView({
@@ -50,7 +52,7 @@ class _VenusViewState extends State<VenusView> {
                 child: FutureBuilder<Question>(
                     future: getPost(),
                     builder: (context, snapshot) {
-                      return Text('${snapshot.data.description}');
+                      return Text('${snapshot.data.description[9]}');
                     }),
               )
             ],

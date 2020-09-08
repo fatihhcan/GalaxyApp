@@ -46,13 +46,7 @@ class _UranusViewState extends State<UranusView> {
                   ),
                 ],
               ),
-              Container(
-                child: FutureBuilder<Question>(
-                    future: getPost(),
-                    builder: (context, snapshot) {
-                      return Text('${snapshot.data.description}');
-                    }),
-              )
+
             ],
           ),
         ),

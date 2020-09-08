@@ -46,8 +46,7 @@ class _MoonViewState extends State<MoonView> {
                   ),
                 ],
               ),
-              Container(child: Card() //url,
-                  ),
+
             ],
           ),
         ),

@@ -51,10 +51,10 @@ class _EarthViewState extends State<EarthView> {
               ),
               Container(
                 child: FutureBuilder<Question>(
-                    //      future: getQuestion(),
+                    future: getPost(),
                     builder: (context, snapshot) {
-                  return Text('${snapshot.data.description}');
-                }),
+                      return Text('${snapshot.data.description}');
+                    }),
               )
             ],
           ),

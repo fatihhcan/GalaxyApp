@@ -1,10 +1,19 @@
 import 'dart:convert';
 
-List<Question> questionFromJson(String str) =>
+/*List<Question> questionFromJson(String str) =>
     List<Question>.from(json.decode(str).map((x) => Question.fromJson(x)));
 
 String questionToJson(List<Question> data) =>
-    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));*/
+Question questionFromJson(String str) {
+  final jsonData = json.decode(str);
+  return Question.fromJson(jsonData);
+}
+
+String questionToJson(Question data) {
+  final dyn = data.toJson();
+  return json.encode(dyn);
+}
 
 class Question {
   Question({
