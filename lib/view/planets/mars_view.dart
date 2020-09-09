@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uzayRehberApp/components/style/color/color.dart';
+import 'package:uzayRehberApp/model/planets.dart';
+import 'package:uzayRehberApp/services/service.dart';
 
 class MarsView extends StatefulWidget {
   MarsView({
@@ -46,6 +48,13 @@ class _MarsViewState extends State<MarsView> {
                   ),
                 ],
               ),
+              Container(
+                child: FutureBuilder<Question>(
+                    future: getPost(),
+                    builder: (context, snapshot) {
+                      return Text('${snapshot.data.description[2]}');
+                    }),
+              )
             ],
           ),
         ),

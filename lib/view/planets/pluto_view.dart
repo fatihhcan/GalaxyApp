@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uzayRehberApp/components/style/color/color.dart';
+import 'package:uzayRehberApp/model/planets.dart';
+import 'package:uzayRehberApp/services/service.dart';
 
 class PlutoView extends StatefulWidget {
   PlutoView({
@@ -46,7 +48,13 @@ class _PlutoViewState extends State<PlutoView> {
                   ),
                 ],
               ),
-
+              Container(
+                child: FutureBuilder<Question>(
+                    future: getPost(),
+                    builder: (context, snapshot) {
+                      return Text('${snapshot.data.description[6]}');
+                    }),
+              )
             ],
           ),
         ),

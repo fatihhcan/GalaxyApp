@@ -16,6 +16,6 @@ getPost() async {
 }*/
 String url = 'localhost:3000/posts';
 Future<Question> getPost() async {
-  final response = await http.get('$url/1');
+  final response = await http.get('$url');
   return questionFromJson(response.body);
 }
